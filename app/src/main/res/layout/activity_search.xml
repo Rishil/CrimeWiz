@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    tools:context=".features.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@layout/card_view_style"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter a Location"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locationTextView"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/searchResultsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchView"
+                android:visibility="gone"
+                android:text="Results"
+                android:textColor="@color/black"/>
+
+            <ListView
+                android:id="@+id/resultsListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchResultsTextView"
+                android:visibility="gone">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/recentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recent Searches"
+                android:textAlignment="center"
+                android:layout_below="@id/resultsListView"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+
+            <ListView
+                android:id="@+id/recentSearchesListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recentTextView" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:onClick="onClickBack"
+            android:text="Back" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

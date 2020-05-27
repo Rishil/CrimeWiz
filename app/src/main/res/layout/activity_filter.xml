@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:theme="@style/AppTheme"
+    tools:context=".features.FilterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@layout/card_view_style"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/noDataTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:visibility="gone"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/categoriesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/categories"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+        <ListView
+            android:id="@+id/categoriesListView"
+            android:choiceMode="multipleChoice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/yearTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/per_year"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+        <ListView
+            android:id="@+id/yearListView"
+            android:choiceMode="multipleChoice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/monthTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/per_month"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+        <ListView
+            android:id="@+id/monthListView"
+            android:choiceMode="multipleChoice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"
+            android:onClick="onClickCancel"
+            android:text="@string/back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:onClick="onClickCancel"/>
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:text="@string/save"
+                android:onClick="onClickSave"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

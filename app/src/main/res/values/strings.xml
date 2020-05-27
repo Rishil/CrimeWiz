@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CrimeWiz</string>
+    <string name="open_nav_drawer">Open Drawer</string>
+    <string name="close_nav_drawer">Close Drawer</string>
+    <string name="filter">Filter</string>
+    <string name="clear">Clear</string>
+    <string name="login">Login</string>
+    <string name="register"><u>Register</u></string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+
+
+    <string name="working_offline">Working Offline</string>
+    <string name="no_data">No Data</string>
+    <!-- Tabs -->
+    <string name="per_category">By Crime</string>
+    <string name="per_year">Year</string>
+    <string name="per_month">Month</string>
+    <string name="predict">Predict</string>
+    <string name="predict_default_text">Predict the number of Crimes by the Year</string>
+    <string name="regression_disclaimer">Please note that the regression is calculated purely on the
+        historic data provided by the Police API and what filters are applied by the user.</string>
+
+    <string name="number_of_crimes">Number of Crimes</string>
+    <string name="categories">Categories</string>
+
+
+    <string name="number_of_crimes_per_year">Number of Crimes Per Year</string>
+    <string name="number_of_crimes_per_month">Number of Crimes Per Month</string>
+
+    <string name="location_request">In order to use the location functionalities of CrimeWiz, please allow the app to use your location while you are on the Map feature.</string>
+
+    <string name="api_credit">The crime data used in this application is obtained using the UK Police API (https://data.police.uk/) under the Open Government Licence v3.0.</string>
+    <string name="mp_android_chart_credit">The MPAndroidChart (https://github.com/PhilJay/MPAndroidChart) library was used when plotting the various graphs.</string>
+
+    <string name="app_version">CrimeWiz v1.1</string>
+
+</resources>
